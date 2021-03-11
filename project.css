@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Segoe UI, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    color: rgb(146, 94, 94);
+    margin-bottom: 0;
+    overflow-x: hidden;
+    padding-top: 30px;
+    margin: 20px 0;
+    background-image: url( "bg.jpeg" );
+    backdrop-filter: blur(3px);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.board {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: nowrap;
+    overflow: auto;
+    margin-top: 20px;
+    padding: 84px 20px 20px;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 8px 20px;
+    background-color: rgba(10, 153, 196, 0.65);
+    color: white;
+}
+.bg-img{
+    background-color: #aaa;
+}
+.navbar .pointer:hover {
+    opacity: 0.75;
+}
+
+.navbar > * {
+    
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar .menu > *, .navbar .actions > * {
+    display: inline-block;
+    padding: 8px;
+    border-radius: 2px;
+    margin: 0px 4px;
+    background-color: rgb(8, 195, 228);
+}
+
+.navbar .menu {
+    justify-content: flex-start;
+}
+
+.navbar .menu-input {
+    background-color: transparent;
+    padding: 0;
+}
+
+.navbar .menu-input input {
+    width: 120px;
+    padding: 4px 0.5em;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    background-color:rgb(8, 195, 228);
+    color: rgb(190, 164, 164);
+    font-size: 1.15em;
+    line-height: 1.4;
+    color: black;
+}
+
+.navbar .menu-input input:focus {
+    background-color: white;
+}
+
+.navbar .app-title {
+    justify-content: space-around;
+    font-family: "Comic Sans", "Comic Sans MS", cursive;
+    font-size: 1.3em;
+}
+
+.navbar .actions {
+    justify-content: flex-end;
+}
+
+.board-container {
+    display: flex;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.board-menu {
+    border-radius:10% ;
+    position: fixed;
+    top: 50px;
+    right: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 0 20px;
+    color: crimson;
+    background-color: rgba( 128, 128, 128, 0.3 );
+    color: white;
+}
+.my-3 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.full-width-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    font-size: 1em;
+    resize: none;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    font-size: 1.2em;
+    color:currentColor;
+    background-color: #3a93bd;
+    text-align: center;
+}
+
+.btn-inline {
+    display: inline-block;
+    width: auto;
+}
+
+.btn-primary {
+    background-color: rgb(187, 92, 147);
+    color: white;
+}
+
+.pointer {
+    cursor: pointer ;
+}
+
+.pointer:hover {
+    opacity: 0.2;
+}
+
+.pointer:active {
+    outline: none;
+}
+
+
+.task-list-wrapper {
+    flex-shrink: 0;
+    flex-basis: 240px;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.task-list {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    background-color: rgb(240, 229, 229);
+}
+
+.task-list-title-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-list-title {
+    margin: 4px;
+    font-weight: bold;
+}
+
+.task-list-more {
+    margin: 0 4px;
+}
+
+.task {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: white;
+}
+
+.task .task-edit {
+    float: right;
+    display: none;
+}
+
+.task:hover .task-edit {
+    display: inline;
+}
+
+.add-card-message, .add-list-message {
+    margin-bottom: 4px 0 8px;
+}
+
+.task-list .task, .task-list input, .task-list textarea, .task-list button {
+    border-radius: 4px;
+}
+
+input, textarea {
+    border: none;
+    outline: none;
+}
+
+.add-card-form-actions, .add-list-form-actions {
+    margin: 10px 0;
+}
+
+.add-card-button, .add-list-button {
+    margin-right: 8px;
+}
+
+.add-card-cancel, .add-list-cancel {
+    position: relative;
+    top: 3px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
